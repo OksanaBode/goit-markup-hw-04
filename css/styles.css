@@ -1,0 +1,376 @@
+:root {
+    /* Colors */
+    --cl-dark: 46 47 66;
+    --cl-brand: 77 90 229;
+    --cl-pressedstate: 64 75 191;
+    --cl-success: 49 208 170;
+    --cl-text: 67 68 85;
+    --cl-subtext: 142 143 153;
+    --cl-light: 244 244 253;
+    --cl-accent: 231 233 252;
+    --cl-grey: 46 47 66;
+    --cl-white: 255 255 255;
+
+    /* Percent */
+    --p-primary: 70%;
+    --p-secondary: 50%;
+    --p-tertiatry: 30%;}
+
+    body {font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        letter-spacing: .32px;
+        line-height: 1.5;
+        font-weight: 500; 
+        color: rgb(var(--cl-text));
+        background-color: rgb(var(--cl-white));
+    }
+        
+
+        /* Reset + common style */
+     a {
+            text-decoration: none;
+            font-style: normal;
+            color: currentColor;
+        }
+    
+
+    button {
+        font-family: "Roboto", sans-serif;;
+        cursor: pointer;
+        border: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    .container { width: 1158px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+       overflow: hidden;
+      }
+
+      .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+
+    /* #region heared */
+    .header {
+        display: flex;
+        border-bottom: 1px solid rgb(var(--cl-accent));
+    }
+
+    .header-container{
+        display:flex;
+        align-items: center;
+
+        }
+
+    .header-nav {display:flex;
+        align-items: center;
+        flex-grow: 1;
+        margin-right: 332px;
+        justify-content: space-between;
+    }
+
+    .logo {font-family: "Raleway", sans-serif;
+        color: rgb(var(--cl-brand));
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        margin-right: 76px;
+}
+
+    .logo-accent {color: rgb(var(--cl-dark));}
+
+    .header-menu {display:flex;
+        align-items: center;
+        gap: 40px;
+ }
+
+    .header-menu-item {color: rgb(var(--cl-dark));
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;}
+
+    .header-menu-link {font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        padding: 24px 0;
+        display: inline-block;
+        }
+
+    .header-menu-link:hover,
+    .header-menu-link:focus {color:rgb(var(--cl-pressedstate))}
+
+    .address {
+        font-style: normal;
+       }
+
+    .contacts {
+        display:flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .contacts-item {
+        display: flex;
+        }
+
+    .contacts-link { 
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color:rgb(var(--cl-text));
+        padding: 24px 0;
+        display: inline-block;
+    }
+
+    .contacts-link:hover,.contacts-link:focus {
+        color:rgb(var(--cl-pressedstate))
+    }
+    .contacts-link:active{
+        color:rgb(var(--cl-pressedstate))
+    }
+
+/* #endregion */
+
+/* #region Hero */
+    .hero {
+        background-color: rgb(var(--cl-dark));
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    .hero-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        }
+
+    .hero-title {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: rgb(var(--cl-white));
+        margin-bottom: 48px;
+        max-width: 496px;
+    }
+
+    .btn-primary {background-color: rgb(var(--cl-brand));
+       font-size: 16px;
+        color: rgb(var(--cl-white));
+        letter-spacing: 0.04em;
+        line-height: 1.5;
+        font-weight: 500;
+        border-radius: 4px;
+        padding: 16px 32px;
+        min-width: 169px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        height: 56px;
+
+    }
+
+    .btn-primary:hover,.btn-primary:focus {background-color: rgb(var(--cl-pressedstate));}
+
+
+/* #endregion */
+/* #region Feature */
+    .features {}
+
+ .features-caption {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color:rgb(var(--cl-dark));
+        margin-bottom: 8px;
+    }
+
+    .features-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .features-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
+
+    .features-desc {
+        font-weight: 400;
+        color: rgb(var(--cl-text));
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+
+    }
+
+/* #endregion */
+/* #region Team */
+    .team {
+        background-color: rgb(var(--cl-light));
+    }
+
+    .team-title {
+        color: rgb(var(--cl-dark));
+        text-align: center;
+        font-size: 36px;
+        line-height: 1.11; 
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 72px;
+    }
+
+    .team-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .team-item {
+        background-color: rgb(var(--cl-white));
+        width: calc((100% - 3 * 24px) / 4);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    }
+
+    .team-item-name {
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color:rgb(var(--cl-dark)); 
+        margin-bottom: 8px;  
+    }
+
+    .team-item-desc {
+        color: rgb(var(--cl-text));
+        text-align: center;
+        font-weight: 400;
+        line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.team-title-wrap {
+    padding: 32px 0;
+}
+
+.team-item-img {
+    display: block;
+    max-width: 100%;
+  object-fit: cover;
+}
+
+/* #endregion */
+/* #region Portfolio */
+    .portfolio {}
+
+    .portfolio-title{
+        color: rgb(var(--cl-dark));
+        text-align: center;
+        font-size: 36px;
+        line-height: 1.11; 
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 72px;
+    }
+
+    .portfolio-list {
+        display: flex;
+        gap: 48px 24px;
+        flex-wrap: wrap;
+    }
+.card-content{
+    padding: 32px 16px;
+    align-self: stretch;
+    border-right: 1px solid rgb(var(--cl-accent));
+    border-bottom: 1px solid rgb(var(--cl-accent));
+    border-left: 1px solid rgb(var(--cl-accent));
+}
+
+
+    .portfolio-item {
+        display: flex;
+        width: 360px;
+        height: 420px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-shrink: 0;
+    }
+
+    .portfolio-item-name {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color:rgb(var(--cl-dark));
+        margin-bottom: 8px;
+    }
+
+    .portfolio-item-desc {
+        color: rgb(var(--cl-text));
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+/* #endregion */
+  /* #region Footer */ 
+    .footer {
+        background-color: rgb(var(--cl-dark));
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .logo-footer {
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color:rgb(var(--cl-brand));
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+    
+    .logo-footer-accent {
+        color: rgb(var(--cl-light));
+    }
+
+    .footer-item {
+        color:rgb(var(--cl-light));
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        max-width: 264px;
+
+
+    }
